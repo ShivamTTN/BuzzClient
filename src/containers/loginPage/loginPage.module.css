@@ -1,0 +1,139 @@
+.container {
+  margin: 5% 20%;
+  box-shadow: 0 0 50px lightgrey;
+}
+ul {
+  margin-left: 0;
+  padding: 13% 5%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 45vh;
+}
+.leftHeading {
+  width: 100%;
+  text-align: center;
+  align-content: center;
+}
+.heading {
+  color: #555555;
+  font-weight: bold;
+  font-size: large;
+  width: 60%;
+  align-content: center;
+  text-align: center;
+  margin: 1rem auto;
+}
+.subHeading {
+  color: #999999;
+  text-align: center;
+  font-size: small;
+}
+hr {
+  padding: 0;
+  margin: 0;
+  box-shadow: -5px 0px 12px lightgrey;
+
+  border: 0.1px solid #eee;
+}
+.loginHeading {
+  font-weight: 700;
+  font-size: 1.2rem;
+  font-family: "Ubuntu", sans-serif;
+}
+.inputFormField {
+  height: 30px;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #c4bfbe;
+  color: #e0dddc;
+  width: 70%;
+  font-size: 1rem;
+}
+.inputFormField {
+  outline: none;
+  color: black;
+}
+input[type="checkbox"] {
+  opacity: 100% !important;
+  cursor: pointer !important;
+  pointer-events: all !important;
+}
+
+input[type="checkbox"]:checked {
+  opacity: 100% !important;
+  cursor: pointer !important;
+}
+.underLoginInput {
+  width: 90%;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  align-content: center;
+  align-items: center;
+}
+.underLoginInput div {
+  display: inline-flex;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: #9e79f2;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    margin: 5% 20%;
+    box-shadow: 0 0 50px lightgrey;
+  }
+  ul {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  li:last-child {
+    margin-top: 15%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 0;
+    box-shadow: none;
+  }
+  .underLoginInput {
+    flex-direction: column;
+  }
+  a {
+    margin-top: 5%;
+  }
+}
+
+.google {
+  color: #e85b9b;
+  border-radius: 30px;
+  /* height: 37px; */
+  background-color: transparent;
+  border: 1px solid #e85b9b;
+  font-weight: 200;
+  padding: 2% 7% 2% 7%;
+  box-shadow: 0px 0px 12px #e85b9b;
+  cursor: pointer;
+  font-size: 0.9rem;
+  /* text-align: center; */
+}
+.google:hover {
+  background-color: #e85b9b;
+  color: white;
+}

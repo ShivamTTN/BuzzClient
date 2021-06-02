@@ -1,0 +1,20 @@
+.container {
+    /* background-color: #dfdfe0; */
+    
+    background-image: linear-gradient(to right , #43C6AC, #191654);
+  
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .subContainer{
+     
+      padding: 6% 5%;
+      display: flex;
+    justify-content: space-around;
+  }
+  .leftContent {
+    width: 70%;
+  }
+  .rightContent {
+    width: 22%;
+  }

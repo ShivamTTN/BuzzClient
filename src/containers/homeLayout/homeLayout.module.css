@@ -1,0 +1,35 @@
+.container{
+    /* background-color: #dfdfe0; */
+    background-image: linear-gradient(to right , #43C6AC, #191654);
+    padding: 5% 5% 0 5%;
+    display: flex;
+    justify-content: space-around;
+    min-height: 100vh;
+    
+}
+.leftSide
+{
+    width: 22%;
+}
+.leftSide > *
+{
+    padding: 15px 0;
+}
+.middleSide{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    width: 45%;
+}
+
+.middleSide > *{
+    padding: 15px 0;
+}
+.rightSide{
+    width: 22%;
+}
+.rightSide > *{
+    padding: 15px 0;
+}

@@ -1,0 +1,246 @@
+.container {
+  /* width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; */
+}
+.subContainer {
+  display: flex;
+  border: 1px solid white;
+  background-color: white;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #f0e5e5;
+  padding: 10px 10px;
+}
+.topProfile {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topProfileLeft {
+  display: flex;
+}
+.personImage {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+.personInfo {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: 0.9rem;
+  padding: 0 10px;
+}
+.personInfo p {
+  margin: 0;
+  padding: 0;
+}
+.personInfo p:first-child {
+  font-weight: 900;
+  text-transform: capitalize;
+  text-align: left;
+  font-size: 1.1rem;
+}
+.personInfo p:last-child {
+  color: 	#787878;
+  font-size: 0.8rem;
+}
+
+.caption {
+  margin: 10px 0;
+  text-align: start;
+}
+
+.postImage {
+  height: 250px;
+  width: 100%;
+  border-radius: 5px;
+  display: inline;
+}
+.countSession {
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.countSessionLeft > * {
+  padding: 4px;
+}
+.countSession i:first-child {
+  background-color: #227de2;
+  color: white;
+
+  text-align: center;
+  border-radius: 50%;
+  padding: 4px;
+}
+.countSession i:nth-child(3) {
+  background-color: #c80000;
+  color: white;
+  text-align: center;
+  border-radius: 50%;
+  padding: 4px;
+  margin-left: 10px;
+}
+.buttonSection{
+    border-top: 1px solid #D3D3D3;
+    border-bottom: 1px solid #D3D3D3;
+    display: flex;
+    justify-content: space-around;
+    padding: 2px 0;
+}
+.commentSectionToWrite{
+    padding: 8px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-around  ;
+    align-items: center;
+}
+.commentSectionToShow{
+  padding: 2px 10px;
+  display: flex;
+  width: 100%;
+  justify-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 0.8rem;
+}
+.commentContainer{
+  padding: 2px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.personCommentImage {
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  margin-right: 5px;
+}
+.postInput{
+    width: 85%;
+    height: 35px;
+    color:black;
+    outline: thin;
+    border-radius: 20px;
+    background-color: 	#E8E8E8;
+    outline: thin;
+    border: thin;
+    padding: 0 15px;
+}
+
+
+
+.reportDropdown {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reportDropdownContent {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 70%;
+  /* right: 200px; */
+  right: 10%;
+}
+
+.reportDropdownContent a {
+  color: black;
+  padding: 16px 16px;
+  text-decoration: none;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.reportDropdownContent *:hover {
+  background-color: #ddd;
+}
+
+.reportDropdown:hover .reportDropdownContent {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sliderWrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.slide {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.arrow {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform ease-in .1s;
+}
+
+.nextArrow {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  z-index: 998;
+  color: black;
+  transform: translateY(-50%);
+}
+
+.backArrow {
+  position: absolute;
+  top: 50%;
+  z-index: 998;
+  color: black;
+  transform: translateY(-50%);
+}
