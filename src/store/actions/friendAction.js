@@ -41,7 +41,7 @@ export const fetchFriendData = () => {
   return (dispatch) => {
     dispatch(fetchFriendStart());
     axios
-      .get("/getConnectedFriends", {
+      .get("https://young-sea-76906.herokuapp.com/getConnectedFriends", {
         headers: {
           authorization: Cookies.get("token"),
         },
@@ -54,7 +54,7 @@ export const fetchFriendData = () => {
       });
     dispatch(fetchFriendStart());
     axios
-      .get("/getReceivedFriendCount", {
+      .get("https://young-sea-76906.herokuapp.com/getReceivedFriendCount", {
         headers: {
           authorization: Cookies.get("token"),
         },
@@ -72,7 +72,7 @@ export const fetchFriendData = () => {
 export const fetchFriendDataWithoutSpinner = () => {
   return (dispatch) => {
     axios
-      .get("/getConnectedFriends", {
+      .get("https://young-sea-76906.herokuapp.com/getConnectedFriends", {
         headers: {
           authorization: Cookies.get("token"),
         },
@@ -84,7 +84,7 @@ export const fetchFriendDataWithoutSpinner = () => {
         dispatch(fetchFriendFail(err));
       });
     axios
-      .get("/getReceivedFriendCount", {
+      .get("https://young-sea-76906.herokuapp.com/getReceivedFriendCount", {
         headers: {
           authorization: Cookies.get("token"),
         },
@@ -103,7 +103,7 @@ export const fetchSuggesstedFriendData = () => {
   return (dispatch) => {
     dispatch(fetchFriendStart());
     axios
-      .get("/getSuggesstions", {
+      .get("https://young-sea-76906.herokuapp.com/getSuggesstions", {
         headers: {
           "Content-Type": "application/json",
           authorization: Cookies.get("token"),
@@ -124,7 +124,7 @@ export const fetchSuggesstedFriendData = () => {
 export const fetchSuggesstedFriendDataWithoutSpinner = () => {
   return (dispatch) => {
     axios
-      .get("/getSuggesstions", {
+      .get("https://young-sea-76906.herokuapp.com/getSuggesstions", {
         headers: {
           "Content-Type": "application/json",
           authorization: Cookies.get("token"),
@@ -147,7 +147,7 @@ export const onAddFriendHandler = (friendId) => {
   return (dispatch) => {
     axios
       .post(
-        "/addFriend",
+        "https://young-sea-76906.herokuapp.com/addFriend",
         { friendId: friendId },
         {
           headers: {
@@ -175,7 +175,7 @@ export const onConfirmFriendHandler = (friendId) => {
   return (dispatch) => {
     axios
       .post(
-        "/confirmFriend",
+        "https://young-sea-76906.herokuapp.com/confirmFriend",
         { friendId: friendId },
         {
           headers: {
@@ -204,7 +204,7 @@ export const onRejectFriendHandler = (friendId) => {
   return (dispatch) => {
     axios
       .post(
-        "/rejectFriend",
+        "https://young-sea-76906.herokuapp.com/rejectFriend",
         { friendId: friendId },
         {
           headers: {

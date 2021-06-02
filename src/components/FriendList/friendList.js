@@ -1,7 +1,7 @@
-import React, { useState,useRef } from "react";
+import React, { useState } from "react";
 import { connect } from "react-redux";
 //Components
-import { Redirect, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 import PersonTile from "../PersonTile/personTile";
 import Button from "../Button/button";
 import Spinner from "../Spinner/Spinner";

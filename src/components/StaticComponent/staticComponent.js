@@ -1,6 +1,4 @@
-import React, { useEffect } from "react";
-import { connect } from "react-redux";
-import * as actionTypes from "../../store/actions/index";
+import React from "react";
 
 import classes from "./staticComponent.module.css";
 

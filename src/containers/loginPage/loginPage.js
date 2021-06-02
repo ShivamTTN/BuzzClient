@@ -19,7 +19,7 @@ const loginPage = () => {
               Don't stop until you're proud.{" "}
             </p>
           </div>
-          <a href="http://localhost:8000/auth/google" className={classes.google}>Sign in with Google</a>
+          <a href="https://young-sea-76906.herokuapp.com/auth/google" className={classes.google}>Sign in with Google</a>
           {/* <Button redirect="http://localhost:8000/auth/google" type="normal" buttonClass="google" text="Sign in with Google" /> */}
         </li>
         {/* <hr /> */}

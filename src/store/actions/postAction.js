@@ -75,7 +75,7 @@ export const fetchAllPostDataForDelete = () => {
     dispatch(fetchPostStart());
     // console.log(Cookies.get("token"))
     axios
-      .get("/getReportedPosts", {
+      .get("https://young-sea-76906.herokuapp.com/getReportedPosts", {
         headers: {
           "Content-Type": "application/json",
           authorization: Cookies.get("token"),
@@ -100,7 +100,7 @@ export const fetchAllPostDataForCreate = () => {
     dispatch(fetchPostStart());
     // console.log(Cookies.get("token"))
     axios
-      .get("/getPosts", {
+      .get("https://young-sea-76906.herokuapp.com/getPosts", {
         headers: {
           "Content-Type": "application/json",
           authorization: Cookies.get("token"),
@@ -135,7 +135,7 @@ export const fetchAllPostData = (checked, skip, limit) => {
         dispatch(clearPostDataFromStore());
       }
       axios
-        .get("/getReportedPosts", {
+        .get("https://young-sea-76906.herokuapp.com/getReportedPosts", {
           headers: {
             "Content-Type": "application/json",
             authorization: Cookies.get("token"),
@@ -175,7 +175,7 @@ export const fetchAllPostData = (checked, skip, limit) => {
       console.log(skip, limit);
       // console.log(Cookies.get("token"))
       axios
-        .get("/getPosts", {
+        .get("https://young-sea-76906.herokuapp.com/getPosts", {
           headers: {
             "Content-Type": "application/json",
             authorization: Cookies.get("token"),
@@ -216,7 +216,7 @@ export const fetchAllPostDataWithoutSpinner = (checked,skip,limit) => {
     // dispatch(fetchPostStart());
     // console.log(Cookies.get("token"))
     axios
-      .get("/getPosts", {
+      .get("https://young-sea-76906.herokuapp.com/getPosts", {
         headers: {
           "Content-Type": "application/json",
           authorization: Cookies.get("token"),
@@ -245,7 +245,7 @@ export const fetchMyPostCountData = () => {
     dispatch(fetchPostStart());
     // console.log(Cookies.get("token"))
     axios
-      .get("/getMyPostCount", {
+      .get("https://young-sea-76906.herokuapp.com/getMyPostCount", {
         headers: {
           "Content-Type": "application/json",
           authorization: Cookies.get("token"),
@@ -270,7 +270,7 @@ export const postLikeClicked = (postId,checked,skip,limit) => {
     
     axios
       .post(
-        "/createLike",
+        "https://young-sea-76906.herokuapp.com/createLike",
         {
           postId: postId,
         },
@@ -302,7 +302,7 @@ export const postDisikeClicked = (postId,checked,skip,limit) => {
   return (dispatch) => {
     axios
       .post(
-        "/createDislike",
+        "https://young-sea-76906.herokuapp.com/createDislike",
         {
           postId: postId,
         },
@@ -339,7 +339,7 @@ export const postCommentSubmit = (event, postId, comment,checked,skip,limit) => 
   return (dispatch) => {
     axios
       .post(
-        "/createComment",
+        "https://young-sea-76906.herokuapp.com/createComment",
         {
           postId: postId,
           comment: comment,
@@ -375,7 +375,7 @@ export const createPost = (caption, url) => {
     // dispatch(fetchPostStart());
     axios
       .post(
-        "/createPost",
+        "https://young-sea-76906.herokuapp.com/createPost",
         {
           caption: caption,
           images: url,
@@ -409,7 +409,7 @@ export const reportPost = (postId,checked,skip,limit) => {
   return (dispatch) => {
     axios
       .post(
-        "/createReport",
+        "https://young-sea-76906.herokuapp.com/createReport",
         {
           postId: postId,
         },
@@ -442,7 +442,7 @@ export const deletePost = (postId, checked,skip,limit) => {
   return (dispatch) => {
     axios
       .post(
-        "/deletePost",
+        "https://young-sea-76906.herokuapp.com/deletePost",
         {
           postId: postId,
         },

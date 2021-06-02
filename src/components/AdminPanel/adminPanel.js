@@ -1,7 +1,6 @@
-import React,{useState} from "react";
+import React from "react";
 import {connect} from "react-redux"
 import classes from "./adminPanel.module.css";
-import * as actionTypes from "../../store/actions/index"
 const adminPanel = (props) => {
   // console.log(props.checkboxChecked)
   let display = null;
@@ -25,11 +24,4 @@ const mapStateToProps = (state)=>{
     checkboxChecked : state.postReducer.checkboxChecked
   }
 }
-
-const mapDispatchToProps = (dispatch)=>{
-  return{
-    
-  }
-}
-
-export default connect(mapStateToProps,mapDispatchToProps)(adminPanel);
+export default connect(mapStateToProps)(adminPanel);

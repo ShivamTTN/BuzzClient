@@ -25,7 +25,7 @@ export const fetchUserData = () => {
     dispatch(fetchUserStart());
     // console.log(Cookies.get("token"))
     axios
-      .get("/getUserData", {
+      .get("https://young-sea-76906.herokuapp.com/getUserData", {
         headers: {
           authorization: Cookies.get("token"),
         },
@@ -49,7 +49,7 @@ export const updateUserData = (userObj) => {
     dispatch(fetchUserStart());
     axios
       .put(
-        "/updateUserData",
+        "https://young-sea-76906.herokuapp.com/updateUserData",
         {
          userObj:userObj
         },
